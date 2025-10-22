@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+/* Apply the font globally */
+body {
+  font-family: "Space Grotesk", "Space Grotesk Placeholder", sans-serif; /* Directly apply the font */
+}
+
+/* Layout styles */
+.layout {
+  display: flex;
+  min-height: 100vh; /* Ensure the layout takes full height */
+}
+
+.sidebar {
+  width: 16rem; /* w-64 */
+  background-color: #1f2937; /* bg-gray-800 */
+  color: #ffffff; /* text-white */
+  flex-shrink: 0; /* Prevent the sidebar from shrinking */
+  position: fixed; /* Fix the sidebar to the left */
+  top: 0;
+  left: 0;
+  height: 100%; /* Full height */
+}
+
+.content {
+  flex-grow: 1; /* Ensure the content takes the remaining space */
+  padding: 1rem; /* p-4 */
+  overflow: auto;
+  margin-left: 16rem; /* Add left margin equal to the sidebar width */
+}
