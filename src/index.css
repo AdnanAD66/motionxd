@@ -2,7 +2,7 @@
 
 /* Apply the font globally */
 body {
-  font-family: "Space Grotesk", "Space Grotesk Placeholder", sans-serif; /* Directly apply the font */
+  font-family: Georgia, 'Times New Roman', Times, serif; /* Directly apply the font */
 }
 
 /* Layout styles */
@@ -25,6 +25,11 @@ body {
 .content {
   flex-grow: 1; /* Ensure the content takes the remaining space */
   padding: 1rem; /* p-4 */
-  overflow: auto;
   margin-left: 16rem; /* Add left margin equal to the sidebar width */
 }
+
+/* Ensure the main document (window) is the scroll container so Framer Motion's
+   useScroll hooks (which default to the viewport) observe the correct scroll
+   position. Previously `.content` had `overflow: auto` which created an
+   internal scroll container and prevented viewport-based hooks from firing.
+*/

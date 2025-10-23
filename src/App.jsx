@@ -1,6 +1,7 @@
 import React from 'react';
 import Sidebar from './components/Sidebar';
 import Hero from './components/Hero';
+import VideoSection from './components/VideoSection';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Sidebar />
       <div className="content">
         <Hero />
+        <VideoSection />
       </div>
     </div>
   );
