@@ -10,6 +10,7 @@ function App() {
       <div className="content">
         <Hero />
         <VideoSection />
+        <VideoSection />
       </div>
     </div>
   );
