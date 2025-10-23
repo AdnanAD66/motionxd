@@ -2,6 +2,7 @@ import React from 'react';
 import Sidebar from './components/Sidebar';
 import Hero from './components/Hero';
 import VideoSection from './components/VideoSection';
+import LogoStrip from './components/LogoStrip';
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
       <div className="content">
         <Hero />
         <VideoSection />
-        <VideoSection />
+        {/* <LogoStrip /> */}
       </div>
     </div>
   );
