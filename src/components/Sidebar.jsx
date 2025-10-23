@@ -2,7 +2,7 @@ import React from 'react'
 
 function Sidebar() {
 return (
-    <aside className="w-64 h-screen p-4 fixed top-0 left-0 flex flex-col justify-between bg-white shadow-lg z-50">
+    <aside className="w-64 h-screen p-4 fixed top-0 left-0 flex flex-col justify-between bg-white shadow-lg z--2">
         <h2 className="text-4xl font-bold mb-4 text-orange-600">MOTIONXD</h2>
         <nav>
             <a href="#" className="block font-semibold py-2 px-4 rounded hover:bg-gray-700">What We Do</a>
