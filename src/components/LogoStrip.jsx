@@ -25,7 +25,7 @@ export default function LogoScrollSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative text-white py-16 overflow-hidden pl-16 md:pl-24"
+      className="flex items-start justify-start relative text-white py-1  overflow-hidden pl-16 md:pl-24"
     >
       <div className="max-w-7xl mx-auto">
         {/* TOP ROW */}
