@@ -14,16 +14,16 @@ export default function VideoSection() {
   // scale the video slightly, then shrink; translate it upward as you scroll
   // tweak ranges so the video is visible earlier and occupies half the viewport
   // when pinning starts.
-  const scale = useTransform(scrollYProgress, [1, 0.35, 0], [1.08, 1, 0.85]);
+  const scale = useTransform(scrollYProgress, [1, 0.35, 0], [1, 1, 0.85]);
   const translateY = useTransform(scrollYProgress, [0, 1], ["10%", "-20%"]);
   const opacity = useTransform(scrollYProgress, [0.5, 0.08, 0.6, 1], [0, 1, 1, 1]);
 
   return (
     // Reduce the overall section height—use enough space for the pinning
     // animation but avoid large white gaps before/after the video.
-    <section ref={ref} className="relative" style={{ height: '120vh' }}>
+    <section ref={ref} >
       {/* Sticky container pins the video in the viewport while section scrolls */}
-      <div className="sticky top-1/4 h-[75vh] flex items-center justify-center">
+      <div className="sticky top-1/4 flex items-center justify-center">
         <motion.div
           style={{ scale, y: translateY, opacity }}
           className="w-full h-full max-h-[88vh] overflow-hidden rounded-2xl shadow-xl"

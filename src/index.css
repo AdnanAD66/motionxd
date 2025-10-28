@@ -26,10 +26,19 @@ body {
   flex-grow: 1; /* Ensure the content takes the remaining space */
   padding: 1rem; /* p-4 */
   margin-left: 16rem; /* Add left margin equal to the sidebar width */
+  min-width: 0; /* allow the content to shrink inside flex layout to avoid overflow */
 }
 
 /* Ensure the main document (window) is the scroll container so Framer Motion's
-   useScroll hooks (which default to the viewport) observe the correct scroll
-   position. Previously `.content` had `overflow: auto` which created an
-   internal scroll container and prevented viewport-based hooks from firing.
+  useScroll hooks (which default to the viewport) observe the correct scroll
+  position. Previously `.content` had `overflow: auto` which created an
+  internal scroll container and prevented viewport-based hooks from firing.
 */
+
+/* Prevent horizontal scrolling caused by wide/transformed content (carousels,
+  large negative translates, repeated logos, etc.). Hiding horizontal overflow
+  at the root level is a safe, minimal fix to avoid a page-level horizontal
+  scrollbar while preserving vertical scrolling. */
+html, body, #root {
+  overflow-x: hidden;
+}

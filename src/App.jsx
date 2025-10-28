@@ -11,7 +11,8 @@ function App() {
       <div className="content">
         <Hero />
         <VideoSection />
-        {/* <LogoStrip /> */}
+        <LogoStrip />
+        <VideoSection />
       </div>
     </div>
   );
