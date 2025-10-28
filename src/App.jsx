@@ -3,6 +3,10 @@ import Sidebar from './components/Sidebar';
 import Hero from './components/Hero';
 import VideoSection from './components/VideoSection';
 import LogoStrip from './components/LogoStrip';
+import WhatWeDo from './components/WhatWeDo';
+import KillerVideos from './components/KillerVideos';
+import PricingSection from './components/PricingSection';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -12,7 +16,10 @@ function App() {
         <Hero />
         <VideoSection />
         <LogoStrip />
-        <VideoSection />
+        <WhatWeDo />
+        <KillerVideos />
+        <PricingSection />
+        <Footer />
       </div>
     </div>
   );
