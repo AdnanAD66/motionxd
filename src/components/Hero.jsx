@@ -26,9 +26,9 @@ export default function Hero() {
       <div className="w-full max-w-7xl relative py-18 sm:px-12">
         <motion.h1
           style={{ scale, y, opacity }}
-          className="text-5xl sm:text-8xl font-bold text-orange-600 leading-none tracking-tight text-center"
+          className="text-5xl sm:text-8xl font-bold text-primary leading-none tracking-tight text-center"
         >
-          WORLD-CLASS <span className="text-black">3D</span> AND MOTION VIDEOS
+          NEXT-GEN <span className="text-black">VR</span> WEB & APP DEVELOPMENT
         </motion.h1>
       </div>
 

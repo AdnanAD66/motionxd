@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export default function Footer() {
   return (
-    <footer className="bg-orange-600 text-white py-20 px-6 md:px-24 overflow-hidden relative rounded-3xl mt-20">
+    <footer className="bg-primary text-white py-20 px-6 md:px-24 overflow-hidden relative rounded-3xl mt-20">
       {/* Animated background glow */}
       <motion.div
         className="absolute inset-0 bg-gradient-to-t from-orange-500/10 via-transparent to-transparent blur-3xl"
@@ -39,25 +39,25 @@ export default function Footer() {
         >
           <a
             href="#"
-            className="text-neutral-300 hover:text-orange-500 transition-colors duration-300"
+            className="text-neutral-300 hover:text-white transition-colors duration-300"
           >
             Home
           </a>
           <a
             href="#work"
-            className="text-neutral-300 hover:text-orange-500 transition-colors duration-300"
+            className="text-neutral-300 hover:text-white transition-colors duration-300"
           >
             Work
           </a>
           <a
             href="#pricing"
-            className="text-neutral-300 hover:text-orange-500 transition-colors duration-300"
+            className="text-neutral-300 hover:text-white transition-colors duration-300"
           >
             Pricing
           </a>
           <a
             href="#contact"
-            className="text-neutral-300 hover:text-orange-500 transition-colors duration-300"
+            className="text-neutral-300 hover:text-white transition-colors duration-300"
           >
             Contact
           </a>
@@ -76,9 +76,9 @@ export default function Footer() {
               <motion.a
                 key={i}
                 href="#"
-                whileHover={{ y: -3, color: "#fb923c" }}
+                whileHover={{ y: -3, color: "#ffff" }}
                 transition={{ type: "spring", stiffness: 300 }}
-                className="text-neutral-400 hover:text-orange-500 transition-colors duration-300"
+                className="text-neutral-400 hover:text-white transition-colors duration-300"
               >
                 {social}
               </motion.a>

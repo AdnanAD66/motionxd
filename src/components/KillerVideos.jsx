@@ -32,7 +32,7 @@ export default function ProjectsShowcase() {
   ];
 
   return (
-    <section className="bg-white text-black py-32">
+    <section className="bg-white text-primary py-32">
       {/* Section Heading */}
       <motion.div
         initial={{ opacity: 0, y: 40 }}
@@ -92,7 +92,7 @@ export default function ProjectsShowcase() {
                     {p.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="text-sm bg-orange-100 text-orange-600 px-3 py-1 rounded-full font-medium"
+                        className="text-sm bg-primary text-white px-3 py-1 rounded-full font-medium"
                       >
                         {tag}
                       </span>
@@ -102,7 +102,7 @@ export default function ProjectsShowcase() {
 
                 <div className="flex items-center justify-between">
                   <span className="text-neutral-400 font-medium">{p.year}</span>
-                  <span className="text-orange-500 font-bold text-xl">
+                  <span className="text-primary font-bold text-xl">
                     {p.id}
                   </span>
                 </div>
@@ -116,7 +116,7 @@ export default function ProjectsShowcase() {
       <div className="text-center mt-24 px-6 md:px-24">
         <a
           href="#"
-          className="inline-flex items-center gap-2 text-orange-500 font-medium hover:underline"
+          className="inline-flex items-center gap-2 text-primary font-medium hover:underline"
         >
           All projects <span className="text-xl">➜</span>
         </a>
